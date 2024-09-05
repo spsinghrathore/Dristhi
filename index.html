@@ -12,13 +12,13 @@
     <header class="header container">
       <nav>
         <ul class="header__menu">
-          <li><a class="header__link" href="#notes">Notes</a>
+          <li><a class="header__link" href="/public/notes.html">Notes</a>
           </li>
           <li><a class="header__link" href="#about">Student</a>
           </li>
           <li><a class="header__link" href="#contact">Contact</a></li>
           <li>
-            <button class="header__sun">
+            <button id="theme-toggle" class="header__sun">
             <svg xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 24 24" 
             fill="currentColor" 
@@ -36,7 +36,7 @@
             </svg>
             </button>
           </li>
-          <li class="header__btn"><a href="#" class="header__login btn">Login</a></li>
+          <li class="header__btn"><a href="/public/login.html" class="header__login btn">Login</a></li>
         </ul> <!--hamburger menu-->
         <button class="header__bars">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
@@ -48,38 +48,144 @@
       
       </nav>
     </header>
-
+    <!--Mobile navigation-->
+      <div class="mobile-nav">
+        <nav>
+          <ul class="mobile-nav__menu">
+            <li><a href="/public/notes.html" class="mobile-nav__link">Notes</a> </li>
+            <li><a href="#classes" class="mobile-nav__link">Classes</a> </li>
+            <li><a href="#contact" class="mobile-nav__link">Contact</a> </li>
+            <li class="mobile-nav__link-line"></li>
+            <li>            
+              <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 24 24" 
+              fill="currentColor" 
+              >
+                <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 
+                0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 
+                0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0
+                 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75
+                  12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 
+                  18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12
+                   18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 
+                   0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 
+                   0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 
+                   0 0-1.061 1.06l1.59 1.591Z" />
+              </svg>
+              </button></li>
+            <li><a class="mobile-nav__btn btn" href="/public/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    <!--end of mobile navigation-->
+    
     <main>
       <section class="hero container">
-        <img  class="hero__img" src="/public/dristhiBanner.jpg" alt="dristhi banner">
+
+
+
+        <img  class="hero__img" src="/public/dristhiLogo.jpg" alt="dristhi banner">
         <h1 class="hero__title">DRISTHI</h1>
         <h2 class="hero__subtitle">The Range of View</h2>
-        <p class="hero__description">The only Disciplined Coaching institute in <strong>Kishangarh</strong></p>
-        <a href="#" class="hero__btn btn">Call Now</a>
+        <p class="hero__description">"The most disciplined coaching institute in <strong>Kishangarh</strong>"</p>
+        <a href="tel:+919214970083" class="hero__btn btn">Call Now</a>
         </section>
 
         <section class="about container section">
           <div class="about__content">
           <h2 class="about__title">About</h2>
-          <p class="about__description">Lorem, ipsum <strong>Faruk Sir </strong>dolor sit amet consecis adipisci tenetur obcaecati ad. Ipsam alias assumenda suscipit aliquid, nobis minus impedit! Deserunt?
-          Totam optio, consectetur ipsa voluptatibus, ore praesentium, quis, dolore pariatur esed aliquid fugiat debitis.</p>
-          <p class="about__description">since 2005</p>
-          <p class="about__description">a place of well educated teacher</p>
+          <p class="about__description">Welcome to <strong>Dristhi</strong>, Kishangarh's trusted center for quality education. 
+            We provide expert guidance across various subjects, ensuring personalized attention to help students excel. 
+             Whether you're preparing for board exams or seeking extra academic support, we're here to help you succeed.
+            </p>
+          
+          <p class="about__description">Since 20--</p>
+          <br>
           <hr class="about__hr">
-          <h3 class="about__subtitle">RBSE & CBSE</h3>
-          <ul class="about__ul">
-            <li>class 12</li>
-            <li>class 11</li>
-            <li>class 10</li>
-            <li>class 9</li>
-          </ul>
+          <br>
           </div>
-          <div>
-            <img src="/public/Dusty.jpeg" alt="banner" />
+          
+         <h1 class="marquee__title">Our Teachers</h1>
+        </section>
+
+        <section class="container marquee">
+
+         <div class="marquee__card">
+         <img src="/public/faruksir-removebg-preview.png" alt="sir">
+         <h2>Faruk Sir</h2>
+         <p class="marquee__description">Mathematics</p>
+         </div>
+         <div class="marquee__card">
+          <img src="/public/Dusty.jpeg" alt="sir">
+          <h2>Vinay Sir</h2>
+          <p class="marquee__description">Chemistry</p>
+          </div>
+          <div class="marquee__card">
+            <img src="/public/Dusty.jpeg" alt="sir">
+            <h2>Kansingh Sir</h2>
+            <p class="marquee__description">Physics</p>
+            </div>
+           
+        </section>
+        
+        <section class="classes container">
+        <h2 class="classes__title">Classes</h2>
+          <hr class="classes__hr">
+          <div class="classes__class">
+            <h3>Class 12</h3>
+            <h6>RBSE & CBSE</h6>
+            <div class="classes__wrapper">
+              <div class="classes__subject">Physics</div>
+              <div class="classes__subject">Chemistry</div>
+              <div class="classes__subject">Mathematics</div>
+              <div class="classes__subject">Biology</div>
+            </div>
           </div>
 
+          <div class="classes__class">
+            <h3>Class 11</h3>
+            <h6>RBSE & CBSE</h6>
+            <div class="classes__wrapper">
+              <div class="classes__subject">Physics</div>
+              <div class="classes__subject">Chemistry</div>
+              <div class="classes__subject">Mathematics</div>
+              <div class="classes__subject">Biology</div>
+            </div>
+          </div>
+
+          <div class="classes__class">
+            <h3>Class 10</h3>
+            <h6>RBSE & CBSE</h6>
+            <div class="classes__wrapper">
+              <div class="classes__subject">Science</div>
+              <div class="classes__subject">Mathematics</div>
+              <div class="classes__subject">English</div>
+            </div>
+          </div>
+
+          <div class="classes__class">
+            <h3>Class 9</h3>
+            <h6>RBSE & CBSE</h6>
+            <div class="classes__wrapper">
+              <div class="classes__subject">Science</div>
+              <div class="classes__subject">Mathematics</div>
+              <div class="classes__subject">English</div>
+            </div>
+          </div>
+          
+        </section>
+        <section id="contact" class="container contact section">
+          <h2 class="contact__title">Get In Contact</h2>
+          <p class="contact__description">lorem
+          </p>
+          <a class="contact__btn btn" href="tel:+919214970083">Reach Out</a>
         </section>
     </main>
+    <footer class="container footer section">
+      <h3 class="footer__title">Dristhi Kishangarh</h3>
+    </footer>
+
     
       
     

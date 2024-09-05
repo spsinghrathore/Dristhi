@@ -1,3 +1,7 @@
+.about {
+    text-align: center;
+    
+}
 .about__content {
   display: flex;
   flex-direction: column;

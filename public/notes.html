@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+        #message {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: #333;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 2s ease forwards;
+            margin-bottom: 20px; /* Add some space below the message */
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .home-button {
+            background-color: #007bff; /* Blue color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px; /* Rounded edges */
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .home-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .home-button:active {
+            transform: scale(0.98); /* Slightly shrink the button on click */
+        }
+    </style>
+</head>
+<body>
+    <div id="message">📝 <strong>Notes Section Under Development</strong> 📝<br>
+    We're working hard to bring you this feature soon! Stay tuned for updates. ✨
+    </div>
+    <a href="/index.html" class="home-button">Home</a>
+</body>
+</html>

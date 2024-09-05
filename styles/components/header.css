@@ -4,6 +4,9 @@
     align-items: center;
     padding: 2rem;
     padding-bottom: 2rem;
+    position: relative;
+    z-index: 99999;
+
 
 }
 
@@ -27,7 +30,8 @@
 
 
 /* xs */
-@media(min-width: 475px){}
+@media(min-width: 475px){
+}
 
 
 
@@ -44,6 +48,7 @@
     padding: 0;
     gap: 2rem;
   }
+
   
   .header__link {
       font-size: var(--size-xs);
